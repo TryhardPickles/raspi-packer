@@ -158,7 +158,7 @@ echo '%wheel ALL=(ALL) NOPASSWD: ALL' > /etc/sudoers.d/wheel
 if [ "$pi4_alt_fstab" = "true" ] ; then
   echo 'setting up pi4 fstab'
   cat /etc/fstab
-  sed -i 's/sda/sda1/g' /etc/fstab
+  sed -i 's/mmcblk0/mmcblk1/g' /etc/fstab
   cat /etc/fstab
 fi
 
